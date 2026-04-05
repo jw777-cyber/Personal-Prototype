@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #f4f7fc;
+  color: #1e2a3e;
+  line-height: 1.5;
+}
+
+.navbar {
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 0.8rem 2rem;
+}
+
+.nav-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo h2 {
+  font-weight: 700;
+  background: linear-gradient(135deg, #0f2b3d, #1b4f6e);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 1.7rem;
+}
+.logo span {
+  font-size: 0.9rem;
+  color: #2c7da0;
+  font-weight: 500;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem 1rem;
+  list-style: none;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #2c3e50;
+  padding: 0.5rem 0.8rem;
+  border-radius: 30px;
+  transition: all 0.2s;
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.nav-links li a i {
+  font-size: 0.9rem;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  background: #e2f0f7;
+  color: #1f6392;
+}
+
+.page-container {
+  max-width: 1300px;
+  margin: 2rem auto;
+  padding: 0 1.5rem 3rem;
+  min-height: 70vh;
+}
+
+.card {
+  background: white;
+  border-radius: 24px;
+  padding: 1.8rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.03);
+  border: 1px solid #e9edf2;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  color: #0a2b3b;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin: 1.5rem 0 1rem;
+  font-weight: 600;
+  border-left: 5px solid #2c7da0;
+  padding-left: 1rem;
+}
+
+h3 {
+  font-weight: 600;
+  margin: 1rem 0 0.5rem;
+}
+
+.grid-2,
+.mentor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.job-card,
+.mentor-card,
+.event-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 1.2rem;
+  border: 1px solid #e2e8f0;
+  transition: 0.1s;
+}
+
+button,
+.btn {
+  background: #2c7da0;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.4rem;
+  border-radius: 40px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 0.9rem;
+}
+
+button:hover {
+  background: #1f6392;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px 14px;
+  margin: 8px 0 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 16px;
+  font-family: inherit;
+}
+
+form .form-group {
+  margin-bottom: 1rem;
+}
+
+.success-msg {
+  background: #dff9e6;
+  color: #2e6b3e;
+  padding: 0.8rem;
+  border-radius: 20px;
+  margin-top: 1rem;
+}
+
+footer {
+  background: #0f2b3b;
+  color: #cbd5e6;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 3rem;
+  font-size: 0.85rem;
+}
+
+hr {
+  margin: 1rem 0;
+}
+
+.badge {
+  background: #eef2ff;
+  padding: 4px 12px;
+  border-radius: 30px;
+  font-size: 0.75rem;
+}
+
+@media (max-width: 900px) {
+  .nav-links {
+    justify-content: center;
+    margin-top: 0.5rem;
+  }
+  .nav-container {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
